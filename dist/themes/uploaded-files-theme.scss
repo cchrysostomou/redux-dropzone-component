@@ -1,0 +1,40 @@
+.file-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+
+  svg {
+    cursor: pointer;
+  }
+
+  .delete-icon {
+    fill: red;
+  }
+}
+
+.file-flex-row > div {
+  /*display: table-cell;*/
+  vertical-align: top;
+  /*border-top: 1px solid #ddd;*/
+  padding: 1px 8px;
+  flex: 1;
+}
+
+.file-row{
+
+  &:global(.table) &:nth-child(odd) {
+    background: #f9f9f9;
+  }
+
+  div.error-msg {
+    text-align: center;
+
+    .error-txt{
+      color: red;
+    }
+
+  }
+}
